@@ -150,10 +150,8 @@ export default function ValuationResultClient({
             // Header
             fillRect(0, 0, W, 52, navy);
             setFont("bold", 22, white);
-            doc.text("VALTRUST", margin, 22);
-            setFont("normal", 8, [180, 200, 230]);
-            doc.text("Real Estate Intelligence", margin, 29);
-            setFont("bold", 9, white);
+            doc.addImage("./valtrust-isologo-white.png", "PNG", margin, 2.5, 50, 50,"","NONE",0);
+            setFont("normal", 7, [180, 200, 230]);
             doc.text("PROPERTY VALUATION", W - margin, 18, { align: "right" });
             setFont("normal", 7, [180, 200, 230]);
             doc.text("CERTIFICATION REPORT", W - margin, 24, { align: "right" });
